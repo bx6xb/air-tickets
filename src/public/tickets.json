@@ -284,5 +284,161 @@
     },
     "transfers": 2,
     "flightTime": "8h"
-  }
+  },
+  [
+    {
+      "price": {
+        "rub": 26000,
+        "usd": 350,
+        "eur": 320
+      },
+      "airline": "Aeroflot",
+      "departure": {
+        "date": "2024-12-30",
+        "time": "15:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2024-12-30",
+        "time": "21:00",
+        "city": "Moscow",
+        "airport": "SVO"
+      },
+      "transfers": 0,
+      "flightTime": "4h"
+    },
+    {
+      "price": {
+        "rub": 31000,
+        "usd": 410,
+        "eur": 370
+      },
+      "airline": "Air France",
+      "departure": {
+        "date": "2024-12-31",
+        "time": "18:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2024-12-31",
+        "time": "23:00",
+        "city": "Paris",
+        "airport": "CDG"
+      },
+      "transfers": 1,
+      "flightTime": "7h"
+    },
+    {
+      "price": {
+        "rub": 37000,
+        "usd": 490,
+        "eur": 450
+      },
+      "airline": "Swiss International Air Lines",
+      "departure": {
+        "date": "2025-01-01",
+        "time": "08:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2025-01-01",
+        "time": "14:00",
+        "city": "Zurich",
+        "airport": "ZRH"
+      },
+      "transfers": 1,
+      "flightTime": "6h"
+    },
+    {
+      "price": {
+        "rub": 23000,
+        "usd": 310,
+        "eur": 280
+      },
+      "airline": "Thai Airways",
+      "departure": {
+        "date": "2025-01-02",
+        "time": "10:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2025-01-02",
+        "time": "19:00",
+        "city": "Bangkok",
+        "airport": "BKK"
+      },
+      "transfers": 2,
+      "flightTime": "9h"
+    },
+    {
+      "price": {
+        "rub": 42000,
+        "usd": 550,
+        "eur": 500
+      },
+      "airline": "Qantas",
+      "departure": {
+        "date": "2025-01-03",
+        "time": "22:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2025-01-04",
+        "time": "07:00",
+        "city": "Sydney",
+        "airport": "SYD"
+      },
+      "transfers": 3,
+      "flightTime": "15h"
+    },
+    {
+      "price": {
+        "rub": 32000,
+        "usd": 430,
+        "eur": 390
+      },
+      "airline": "Finnair",
+      "departure": {
+        "date": "2025-01-04",
+        "time": "14:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2025-01-04",
+        "time": "18:00",
+        "city": "Helsinki",
+        "airport": "HEL"
+      },
+      "transfers": 1,
+      "flightTime": "6h"
+    },
+    {
+      "price": {
+        "rub": 15000,
+        "usd": 200,
+        "eur": 180
+      },
+      "airline": "LOT Polish Airlines",
+      "departure": {
+        "date": "2025-01-05",
+        "time": "09:00",
+        "city": "Almaty",
+        "airport": "ALA"
+      },
+      "arrival": {
+        "date": "2025-01-05",
+        "time": "14:00",
+        "city": "Warsaw",
+        "airport": "WAW"
+      },
+      "transfers": 1,
+      "flightTime": "7h"
+    }
+  ]
 ]
