@@ -1,0 +1,288 @@
+[
+  {
+    "price": {
+      "rub": 15000,
+      "usd": 200,
+      "eur": 180
+    },
+    "airline": "Air Astana",
+    "departure": {
+      "date": "2024-12-14",
+      "time": "09:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-14",
+      "time": "13:00",
+      "city": "Nur-Sultan",
+      "airport": "NQZ"
+    },
+    "transfers": 0,
+    "flightTime": "4h"
+  },
+  {
+    "price": {
+      "rub": 30000,
+      "usd": 400,
+      "eur": 360
+    },
+    "airline": "Turkish Airlines",
+    "departure": {
+      "date": "2024-12-15",
+      "time": "06:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-15",
+      "time": "12:00",
+      "city": "Istanbul",
+      "airport": "IST"
+    },
+    "transfers": 1,
+    "flightTime": "6h"
+  },
+  {
+    "price": {
+      "rub": 50000,
+      "usd": 660,
+      "eur": 600
+    },
+    "airline": "Emirates",
+    "departure": {
+      "date": "2024-12-16",
+      "time": "22:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-17",
+      "time": "07:00",
+      "city": "Dubai",
+      "airport": "DXB"
+    },
+    "transfers": 2,
+    "flightTime": "9h"
+  },
+  {
+    "price": {
+      "rub": 25000,
+      "usd": 330,
+      "eur": 300
+    },
+    "airline": "Qatar Airways",
+    "departure": {
+      "date": "2024-12-18",
+      "time": "16:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-18",
+      "time": "23:00",
+      "city": "Doha",
+      "airport": "DOH"
+    },
+    "transfers": 0,
+    "flightTime": "7h"
+  },
+  {
+    "price": {
+      "rub": 45000,
+      "usd": 600,
+      "eur": 550
+    },
+    "airline": "Lufthansa",
+    "departure": {
+      "date": "2024-12-19",
+      "time": "20:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-20",
+      "time": "10:00",
+      "city": "Frankfurt",
+      "airport": "FRA"
+    },
+    "transfers": 3,
+    "flightTime": "14h"
+  },
+  {
+    "price": {
+      "rub": 20000,
+      "usd": 270,
+      "eur": 250
+    },
+    "airline": "Air India",
+    "departure": {
+      "date": "2024-12-21",
+      "time": "10:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-21",
+      "time": "15:00",
+      "city": "Delhi",
+      "airport": "DEL"
+    },
+    "transfers": 1,
+    "flightTime": "5h"
+  },
+  {
+    "price": {
+      "rub": 35000,
+      "usd": 470,
+      "eur": 420
+    },
+    "airline": "Korean Air",
+    "departure": {
+      "date": "2024-12-22",
+      "time": "08:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-22",
+      "time": "18:00",
+      "city": "Seoul",
+      "airport": "ICN"
+    },
+    "transfers": 2,
+    "flightTime": "10h"
+  },
+  {
+    "price": {
+      "rub": 17000,
+      "usd": 230,
+      "eur": 210
+    },
+    "airline": "Uzbekistan Airways",
+    "departure": {
+      "date": "2024-12-23",
+      "time": "11:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-23",
+      "time": "14:00",
+      "city": "Tashkent",
+      "airport": "TAS"
+    },
+    "transfers": 0,
+    "flightTime": "3h"
+  },
+  {
+    "price": {
+      "rub": 60000,
+      "usd": 800,
+      "eur": 720
+    },
+    "airline": "Singapore Airlines",
+    "departure": {
+      "date": "2024-12-24",
+      "time": "23:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-25",
+      "time": "10:00",
+      "city": "Singapore",
+      "airport": "SIN"
+    },
+    "transfers": 3,
+    "flightTime": "11h"
+  },
+  {
+    "price": {
+      "rub": 22000,
+      "usd": 290,
+      "eur": 260
+    },
+    "airline": "Pegasus Airlines",
+    "departure": {
+      "date": "2024-12-26",
+      "time": "05:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-26",
+      "time": "11:00",
+      "city": "Antalya",
+      "airport": "AYT"
+    },
+    "transfers": 1,
+    "flightTime": "6h"
+  },
+  {
+    "price": {
+      "rub": 18000,
+      "usd": 240,
+      "eur": 220
+    },
+    "airline": "FlyDubai",
+    "departure": {
+      "date": "2024-12-27",
+      "time": "14:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-27",
+      "time": "20:00",
+      "city": "Dubai",
+      "airport": "DXB"
+    },
+    "transfers": 1,
+    "flightTime": "6h"
+  },
+  {
+    "price": {
+      "rub": 28000,
+      "usd": 370,
+      "eur": 330
+    },
+    "airline": "Etihad Airways",
+    "departure": {
+      "date": "2024-12-28",
+      "time": "12:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-28",
+      "time": "19:00",
+      "city": "Abu Dhabi",
+      "airport": "AUH"
+    },
+    "transfers": 2,
+    "flightTime": "7h"
+  },
+  {
+    "price": {
+      "rub": 32000,
+      "usd": 430,
+      "eur": 390
+    },
+    "airline": "British Airways",
+    "departure": {
+      "date": "2024-12-29",
+      "time": "09:00",
+      "city": "Almaty",
+      "airport": "ALA"
+    },
+    "arrival": {
+      "date": "2024-12-29",
+      "time": "17:00",
+      "city": "London",
+      "airport": "LHR"
+    },
+    "transfers": 2,
+    "flightTime": "8h"
+  }
+]
