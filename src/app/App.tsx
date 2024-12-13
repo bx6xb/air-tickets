@@ -1,3 +1,5 @@
+import { Providers } from './Providers'
+
 export const App = () => {
-  return <>App</>
+  return <Providers>App</Providers>
 }
