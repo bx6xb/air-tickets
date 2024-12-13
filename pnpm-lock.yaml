@@ -36,6 +36,9 @@ importers:
       '@it-incubator/stylelint-config':
         specifier: ^2.0.0
         version: 2.0.0(stylelint-config-clean-order@6.1.0(stylelint@16.11.0(typescript@5.6.3)))(stylelint-config-standard-scss@14.0.0(postcss@8.4.49)(stylelint@16.11.0(typescript@5.6.3)))(stylelint@16.11.0(typescript@5.6.3))
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.10.2
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.16
@@ -44,7 +47,7 @@ importers:
         version: 18.3.5(@types/react@18.3.16)
       '@vitejs/plugin-react-swc':
         specifier: ^3.5.0
-        version: 3.7.2(vite@6.0.3(sass@1.83.0))
+        version: 3.7.2(vite@6.0.3(@types/node@22.10.2)(sass@1.83.0))
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -71,7 +74,7 @@ importers:
         version: 8.18.0(eslint@8.57.1)(typescript@5.6.3)
       vite:
         specifier: ^6.0.1
-        version: 6.0.3(sass@1.83.0)
+        version: 6.0.3(@types/node@22.10.2)(sass@1.83.0)
 
 packages:
 
@@ -604,6 +607,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/node@22.10.2':
+    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
 
   '@types/prop-types@15.7.14':
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
@@ -2037,6 +2043,9 @@ packages:
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -2490,6 +2499,10 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
+  '@types/node@22.10.2':
+    dependencies:
+      undici-types: 6.20.0
+
   '@types/prop-types@15.7.14': {}
 
   '@types/react-dom@18.3.5(@types/react@18.3.16)':
@@ -2620,10 +2633,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@vitejs/plugin-react-swc@3.7.2(vite@6.0.3(sass@1.83.0))':
+  '@vitejs/plugin-react-swc@3.7.2(vite@6.0.3(@types/node@22.10.2)(sass@1.83.0))':
     dependencies:
       '@swc/core': 1.10.1
-      vite: 6.0.3(sass@1.83.0)
+      vite: 6.0.3(@types/node@22.10.2)(sass@1.83.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -4204,6 +4217,8 @@ snapshots:
       has-symbols: 1.1.0
       which-boxed-primitive: 1.1.0
 
+  undici-types@6.20.0: {}
+
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
@@ -4214,12 +4229,13 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@6.0.3(sass@1.83.0):
+  vite@6.0.3(@types/node@22.10.2)(sass@1.83.0):
     dependencies:
       esbuild: 0.24.0
       postcss: 8.4.49
       rollup: 4.28.1
     optionalDependencies:
+      '@types/node': 22.10.2
       fsevents: 2.3.3
       sass: 1.83.0
 
