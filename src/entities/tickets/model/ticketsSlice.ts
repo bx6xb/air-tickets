@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-import ticketsData from '../../../public/tickets.json'
-import { Ticket, TicketsState } from './types'
+import ticketsData from '../../../shared/lib/tickets.json'
+import { TicketType, TicketsState } from './types'
 
 const initialState: TicketsState = {
   error: null,
   isTicketsLoading: false,
-  tickets: ticketsData as Ticket[],
+  tickets: ticketsData as TicketType[],
 }
 
 export const ticketsSlice = createSlice({

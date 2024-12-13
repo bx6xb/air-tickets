@@ -1,0 +1,48 @@
+.ticketCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  width: 700px;
+  height: 250px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.buy {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 60px;
+
+  color: white;
+
+  background-color: #fa742d;
+  border-radius: 6px;
+}
+
+.flightInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.transfers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+
+  width: 250px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
