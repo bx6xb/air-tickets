@@ -1,7 +1,7 @@
 import s from './TicketCard.module.scss'
 
-import { TicketType } from '../../entities/tickets/model/types'
-import { FlightInfoCard, getAirlineImage } from '../../shared'
+import { TicketType } from '../../../../entities/tickets/model/types'
+import { FlightInfoCard, getAirlineImage } from '../../../../shared'
 
 type Props = { price: string } & Omit<TicketType, 'id' | 'price'>
 

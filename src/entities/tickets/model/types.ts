@@ -1,7 +1,10 @@
 export type TicketsState = {
   currency: Currencies
   tickets: TicketType[]
+  transfersFilters: TransferFilterValues[]
 }
+
+export type TransferFilterValues = 'all' | 0 | 1 | 2 | 3
 
 export type Currencies = 'eur' | 'rub' | 'usd'
 

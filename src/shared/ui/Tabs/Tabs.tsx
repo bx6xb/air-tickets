@@ -3,12 +3,13 @@ import clsx from 'clsx'
 import s from './Tabs.module.scss'
 
 type Props = {
+  className?: string
   onOptionClick: (option: string) => void
   options: string[]
   selected?: string
 }
 
-export const Tabs = ({ onOptionClick, options, selected }: Props) => {
+export const Tabs = ({ className, onOptionClick, options, selected }: Props) => {
   return (
     <div className={s.tabs}>
       {options.map(option => {
@@ -18,7 +19,7 @@ export const Tabs = ({ onOptionClick, options, selected }: Props) => {
 
         return (
           <div
-            className={clsx(s.option, selected === option && s.selected)}
+            className={clsx(s.option, selected === option && s.selected, className)}
             key={option}
             onClick={onClick}
           >

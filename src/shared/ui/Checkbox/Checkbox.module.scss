@@ -1,0 +1,44 @@
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  & ~ & {
+    margin-top: 10px;
+  }
+
+  &Input {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 23px;
+    height: 23px;
+
+    appearance: none;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+
+    &:checked {
+      border: 1px solid var(--blue);
+
+      &::after {
+        content: '';
+
+        display: block;
+
+        width: 40%;
+        height: 40%;
+
+        background-color: var(--blue);
+
+        mask-image: url('../../images/tick.svg');
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+      }
+    }
+  }
+}
