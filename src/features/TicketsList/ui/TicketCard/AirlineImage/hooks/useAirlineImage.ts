@@ -1,4 +1,4 @@
-export const getAirlineImage = (airline: string) => {
+export const useAirlineImage = (airline: string) => {
   switch (airline) {
     case 'Aeroflot': {
       return 'images/aeroflot.png'

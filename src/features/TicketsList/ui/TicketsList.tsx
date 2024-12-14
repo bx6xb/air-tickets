@@ -16,7 +16,7 @@ export const TicketsList = () => {
   )
 
   return (
-    <div className={s.tickets}>
+    <div className={s.ticketsList}>
       {filteredTickets.length ? (
         filteredTickets.map(({ id, price, ...rest }) => (
           <TicketCard key={id} {...rest} price={formatPrice(price, currency)} />

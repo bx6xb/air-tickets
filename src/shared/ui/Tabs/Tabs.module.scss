@@ -36,8 +36,11 @@
     background-color: var(--blue);
     border: 1px solid var(--blue);
   }
+}
 
-  @media (width <= 576px) {
+// media queries
+@media (width <= 576px) {
+  .option {
     font-size: 14px;
   }
 }

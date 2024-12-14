@@ -1,0 +1,7 @@
+.airlineImage {
+  width: 100%;
+
+  @media (width <= 576px) {
+    width: 50%;
+  }
+}

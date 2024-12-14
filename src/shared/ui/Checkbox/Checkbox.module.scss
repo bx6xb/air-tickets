@@ -6,10 +6,6 @@
   & ~ & {
     margin-top: 10px;
   }
-
-  @media (width <= 576px) {
-    font-size: 14px;
-  }
 }
 
 .input {
@@ -45,8 +41,15 @@
       mask-size: contain;
     }
   }
+}
 
-  @media (width <= 576px) {
+// media queries
+@media (width <= 576px) {
+  .checkbox {
+    font-size: 14px;
+  }
+
+  .input {
     width: 20px;
     height: 20px;
   }

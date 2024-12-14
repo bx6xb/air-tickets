@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next'
 import s from './TicketCard.module.scss'
 
 import { TicketType } from '../../../../entities'
-import { FlightInfoCard, formatTransfrers, getAirlineImage } from '../../../../shared'
+import { FlightInfoCard } from '../../../../shared'
+import { AirlineImage } from './AirlineImage'
+import { TransfersCount } from './TransfersCount'
 
 type Props = { price: string } & Omit<TicketType, 'id' | 'price'>
 
@@ -20,7 +22,8 @@ export const TicketCard = ({
   return (
     <div className={s.ticketCard}>
       <div className={s.airlineAndPrice}>
-        <img alt={airline} className={s.airlineImage} src={getAirlineImage(airline)} />
+        <AirlineImage airline={airline} />
+
         <button className={s.buy} type={'button'}>
           {t('TicketCard_buy')}
           <br /> {t('TicketCard_for')} {price}
@@ -29,13 +32,13 @@ export const TicketCard = ({
 
       <div className={s.flightInfo}>
         <FlightInfoCard {...departure} />
+
         <div className={s.transfers}>
-          {!!transfersCount && (
-            <span className={s.transfersCount}>{formatTransfrers(transfersCount)}</span>
-          )}
+          <TransfersCount transfersCount={transfersCount} />
           <div className={s.line} />
           <span className={s.flightTime}>{flightTime + t('TicketCard_time')}</span>
         </div>
+
         <FlightInfoCard {...arrival} />
       </div>
     </div>

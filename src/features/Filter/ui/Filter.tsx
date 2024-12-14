@@ -9,7 +9,7 @@ import {
   setTransfersFilters,
 } from '../../../entities'
 import { Checkbox, Tabs, useAppDispatch, useAppSelector } from '../../../shared'
-import { checkboxData } from './variables'
+import { checkboxData } from '../model'
 
 export const Filter = () => {
   const currency = useAppSelector(state => state.ticketsSlice.currency)
@@ -27,15 +27,6 @@ export const Filter = () => {
     dispatch(setTransfersFilters(value))
   }
 
-  const mappedCheckboxData = checkboxData.map(({ label, value }) => (
-    <Checkbox
-      checked={transfersFilters.includes(value)}
-      key={value}
-      label={t(label)}
-      onCheckedChange={() => setTransfersFiltersHandler(value)}
-    />
-  ))
-
   return (
     <div className={s.filter}>
       <form>
@@ -46,8 +37,16 @@ export const Filter = () => {
           options={['rub', 'usd', 'eur']}
           selected={currency}
         />
+
         <h3 className={s.filterName}>{t('Filter_transfers_count')}</h3>
-        {mappedCheckboxData}
+        {checkboxData.map(({ label, value }) => (
+          <Checkbox
+            checked={transfersFilters.includes(value)}
+            key={value}
+            label={t(label)}
+            onCheckedChange={() => setTransfersFiltersHandler(value)}
+          />
+        ))}
       </form>
     </div>
   )
