@@ -16,16 +16,24 @@ export const ticketsSlice = createSlice({
     setCurrency(state, action: PayloadAction<Currencies>) {
       state.currency = action.payload
     },
-    setTransfersFilters(state, action: PayloadAction<TransferFilterValues>) {
-      const transfersFilters = state.transfersFilters
+    setTransfersFilters(
+      state,
+      action: PayloadAction<TransferFilterValues | TransferFilterValues[]>
+    ) {
       const filter = action.payload
 
-      if (transfersFilters.includes(filter)) {
-        state.transfersFilters = transfersFilters.filter(v => v !== filter && v !== 'all')
-      } else if (filter === 'all') {
-        state.transfersFilters = [0, 1, 2, 3, 'all']
+      if (Array.isArray(filter)) {
+        state.transfersFilters = filter
       } else {
-        state.transfersFilters.push(filter)
+        const transfersFilters = state.transfersFilters
+
+        if (transfersFilters.includes(filter)) {
+          state.transfersFilters = transfersFilters.filter(v => v !== filter && v !== 'all')
+        } else if (filter === 'all') {
+          state.transfersFilters = [0, 1, 2, 3, 'all']
+        } else {
+          state.transfersFilters.push(filter)
+        }
       }
     },
   },

@@ -1,31 +1,12 @@
-import { useTranslation } from 'react-i18next'
-
 import s from './Filter.module.scss'
 
-import {
-  Currencies,
-  TransferFilterValues,
-  setCurrency,
-  setTransfersFilters,
-} from '../../../entities'
-import { Checkbox, Tabs, useAppDispatch, useAppSelector } from '../../../shared'
+import { Checkbox, Tabs } from '../../../shared'
+import { useFilter } from '../hooks'
 import { checkboxData } from '../model'
 
 export const Filter = () => {
-  const currency = useAppSelector(state => state.ticketsSlice.currency)
-  const transfersFilters = useAppSelector(state => state.ticketsSlice.transfersFilters)
-
-  const { t } = useTranslation()
-
-  const dispatch = useAppDispatch()
-
-  const onOptionClick = (option: string) => {
-    dispatch(setCurrency(option as Currencies))
-  }
-
-  const setTransfersFiltersHandler = (value: TransferFilterValues) => {
-    dispatch(setTransfersFilters(value))
-  }
+  const { currency, onCurrencyChange, setTransfersFiltersHandler, t, transfersFilters } =
+    useFilter()
 
   return (
     <div className={s.filter}>
@@ -33,7 +14,7 @@ export const Filter = () => {
         <h3 className={s.filterName}>{t('Filter_currency')}</h3>
         <Tabs
           className={s.tabs}
-          onOptionClick={onOptionClick}
+          onOptionChange={onCurrencyChange}
           options={['rub', 'usd', 'eur']}
           selected={currency}
         />

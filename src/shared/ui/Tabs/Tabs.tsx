@@ -4,17 +4,17 @@ import s from './Tabs.module.scss'
 
 type Props = {
   className?: string
-  onOptionClick: (option: string) => void
+  onOptionChange: (option: string) => void
   options: string[]
   selected?: string
 }
 
-export const Tabs = ({ className, onOptionClick, options, selected }: Props) => {
+export const Tabs = ({ className, onOptionChange, options, selected }: Props) => {
   return (
     <div className={s.tabs}>
       {options.map(option => {
         const onClick = () => {
-          onOptionClick(option)
+          onOptionChange(option)
         }
 
         return (
