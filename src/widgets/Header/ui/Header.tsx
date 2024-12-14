@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import s from './Header.module.scss'
 
 import { Container, Select } from '../../../shared'
-import logo from '../../../shared/images/logo.png'
 
 export const Header = () => {
   const { i18n, t } = useTranslation()
@@ -21,7 +20,7 @@ export const Header = () => {
     <header className={s.header}>
       <Container className={s.container}>
         <div className={s.logo}>
-          <img alt={'logo'} src={logo} /> Air Tickets
+          <img alt={'logo'} src={'images/logo.png'} /> Air Tickets
         </div>
 
         <Select name={'language'} onOptionChange={onOptionChange} options={options} />

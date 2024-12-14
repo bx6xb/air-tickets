@@ -1,77 +1,58 @@
-import aeroflot from '../images/aeroflot.png'
-import airAstana from '../images/airAstana.png'
-import airFrance from '../images/airFrance.png'
-import airIndia from '../images/airIndia.png'
-import britishAirways from '../images/britishAirways.png'
-import emirates from '../images/emirates.png'
-import etihadAirways from '../images/etihadAirways.png'
-import flyDubai from '../images/flyDubai.png'
-import koreanAir from '../images/koreanAir.png'
-import lufthansa from '../images/lufthansa.png'
-import pegasusAirlines from '../images/pegasusAirlines.png'
-import qantas from '../images/qantas.png'
-import qatarAirways from '../images/qatarAirways.png'
-import singaporeAirlines from '../images/singaporeAirlines.png'
-import swissInternationalAirLines from '../images/swissInternationalAirLines.png'
-import thaiAirways from '../images/thaiAirways.png'
-import turkishAirlines from '../images/turkishAirlines.png'
-import uzbekistanAirways from '../images/uzbekistanAirways.png'
-
 export const getAirlineImage = (airline: string) => {
   switch (airline) {
     case 'Aeroflot': {
-      return aeroflot
+      return 'images/aeroflot.png'
     }
     case 'Air Astana': {
-      return airAstana
+      return 'images/airAstana.png'
     }
     case 'Air France': {
-      return airFrance
+      return 'images/airFrance.png'
     }
     case 'Air India': {
-      return airIndia
+      return 'images/airIndia.png'
     }
     case 'British Airways': {
-      return britishAirways
+      return 'images/britishAirways.png'
     }
     case 'Emirates': {
-      return emirates
+      return 'images/emirates.png'
     }
     case 'Etihad Airways': {
-      return etihadAirways
+      return 'images/etihadAirways.png'
     }
     case 'FlyDubai': {
-      return flyDubai
+      return 'images/flyDubai.png'
     }
     case 'Korean Air': {
-      return koreanAir
+      return 'images/koreanAir.png'
     }
     case 'Lufthansa': {
-      return lufthansa
+      return 'images/lufthansa.png'
     }
     case 'Pegasus Airlines': {
-      return pegasusAirlines
+      return 'images/pegasusAirlines.png'
     }
     case 'Qantas': {
-      return qantas
+      return 'images/qantas.png'
     }
     case 'Qatar Airways': {
-      return qatarAirways
+      return 'images/qatarAirways.png'
     }
     case 'Singapore Airlines': {
-      return singaporeAirlines
+      return 'images/singaporeAirlines.png'
     }
     case 'Swiss International Air Lines': {
-      return swissInternationalAirLines
+      return 'images/swissInternationalAirLines.png'
     }
     case 'Thai Airways': {
-      return thaiAirways
+      return 'images/thaiAirways.png'
     }
     case 'Turkish Airlines': {
-      return turkishAirlines
+      return 'images/turkishAirlines.png'
     }
     case 'Uzbekistan Airways': {
-      return uzbekistanAirways
+      return 'images/uzbekistanAirways.png'
     }
   }
 }
