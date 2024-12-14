@@ -4,8 +4,7 @@ import ticketsData from '../../../shared/lib/tickets.json'
 import { TicketType, TicketsState } from './types'
 
 const initialState: TicketsState = {
-  error: null,
-  isTicketsLoading: false,
+  currency: 'rub',
   tickets: ticketsData as TicketType[],
 }
 

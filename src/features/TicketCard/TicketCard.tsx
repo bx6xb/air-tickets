@@ -1,9 +1,9 @@
 import s from './TicketCard.module.scss'
 
 import { TicketType } from '../../entities/tickets/model/types'
-import { FlightInfoCard } from '../../shared'
+import { FlightInfoCard, getAirlineImage } from '../../shared'
 
-type Props = TicketType
+type Props = { price: string } & Omit<TicketType, 'id' | 'price'>
 
 export const TicketCard = ({
   airline,
@@ -13,20 +13,19 @@ export const TicketCard = ({
   price,
   transfers,
 }: Props) => {
-  const currency = 'rub'
-
   return (
     <div className={s.ticketCard}>
       <div className={s.airlineAndPrice}>
-        <div className={s.airline}>{airline}</div>
+        <img alt={airline} className={s.airlineImage} src={getAirlineImage(airline)} />
         <button className={s.buy} type={'button'}>
-          Купить за {price[currency]}
+          Купить
+          <br /> за {price}
         </button>
       </div>
       <div className={s.flightInfo}>
         <FlightInfoCard {...departure} />
         <div className={s.transfers}>
-          {transfers && <span className={s.transfersCount}>{transfers} пересадок</span>}
+          {!!transfers && <span className={s.transfersCount}>{transfers} пересадок</span>}
           <div className={s.line} />
           <span className={s.flightTime}>{flightTime}</span>
         </div>

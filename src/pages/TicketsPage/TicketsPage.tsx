@@ -1,15 +1,18 @@
-import { TicketType } from '../../entities/tickets/model/types'
+import s from './TicketsPage.module.scss'
+
 import { TicketCard } from '../../features'
-import { useAppSelector } from '../../shared'
+import { formatPrice, useAppSelector } from '../../shared'
 
 export const TicketsPage = () => {
-  const tickets = useAppSelector(state => state.ticketsSlice.tickets) as TicketType[]
+  const { currency, tickets } = useAppSelector(state => state.ticketsSlice)
 
   return (
-    <div>
-      {tickets.map(ticket => (
-        <TicketCard key={ticket.id} {...ticket} />
-      ))}
+    <div className={s.ticketsPage}>
+      <div className={s.tickets}>
+        {tickets.map(({ id, price, ...rest }) => (
+          <TicketCard key={id} {...rest} price={formatPrice(price, currency)} />
+        ))}
+      </div>
     </div>
   )
 }

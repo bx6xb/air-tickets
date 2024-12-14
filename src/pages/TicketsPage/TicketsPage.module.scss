@@ -1,0 +1,11 @@
+.ticketsPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

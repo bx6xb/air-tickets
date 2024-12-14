@@ -1,7 +1,14 @@
 export type TicketsState = {
-  error: null | string
-  isTicketsLoading: boolean
+  currency: Currency
   tickets: TicketType[]
+}
+
+export type Currency = 'eur' | 'rub' | 'usd'
+
+export type PriceInCurrencies = {
+  eur: number
+  rub: number
+  usd: number
 }
 
 export type TicketType = {
@@ -10,11 +17,7 @@ export type TicketType = {
   departure: FlightInfo
   flightTime: string
   id: string
-  price: {
-    eur: number
-    rub: number
-    usd: number
-  }
+  price: PriceInCurrencies
   transfers: number
 }
 
