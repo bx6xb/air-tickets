@@ -5,6 +5,7 @@ import s from './Filter.module.scss'
 import { setCurrency, setTransfersFilters } from '../../../entities'
 import { Currencies, TransferFilterValues } from '../../../entities/tickets/model/types'
 import { Checkbox, Tabs, useAppDispatch, useAppSelector } from '../../../shared'
+import { checkboxData } from './variables'
 
 export const Filter = () => {
   const currency = useAppSelector(state => state.ticketsSlice.currency)
@@ -22,6 +23,15 @@ export const Filter = () => {
     dispatch(setTransfersFilters(value))
   }
 
+  const mappedCheckboxData = checkboxData.map(({ label, value }) => (
+    <Checkbox
+      checked={transfersFilters.includes(value)}
+      key={value}
+      label={t(label)}
+      onCheckedChange={() => setTransfersFiltersHandler(value)}
+    />
+  ))
+
   return (
     <div className={s.filter}>
       <form>
@@ -33,31 +43,7 @@ export const Filter = () => {
           selected={currency}
         />
         <h3 className={s.filterName}>{t('Filter_transfers_count')}</h3>
-        <Checkbox
-          checked={transfersFilters.includes('all')}
-          label={t('Filter_all_options')}
-          onCheckedChange={() => setTransfersFiltersHandler('all')}
-        />
-        <Checkbox
-          checked={transfersFilters.includes(0)}
-          label={t('Filter_without_transfers')}
-          onCheckedChange={() => setTransfersFiltersHandler(0)}
-        />
-        <Checkbox
-          checked={transfersFilters.includes(1)}
-          label={t('Filter_one_transfer')}
-          onCheckedChange={() => setTransfersFiltersHandler(1)}
-        />
-        <Checkbox
-          checked={transfersFilters.includes(2)}
-          label={t('Filter_two_transfers')}
-          onCheckedChange={() => setTransfersFiltersHandler(2)}
-        />
-        <Checkbox
-          checked={transfersFilters.includes(3)}
-          label={t('Filter_three_transfers')}
-          onCheckedChange={() => setTransfersFiltersHandler(3)}
-        />
+        {mappedCheckboxData}
       </form>
     </div>
   )
