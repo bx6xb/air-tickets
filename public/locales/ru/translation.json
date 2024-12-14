@@ -19,5 +19,6 @@
   "TicketCard_buy": "Купить",
   "TicketCard_for": "за",
   "TicketCard_singular": "пересадка",
-  "TicketCard_plural": "пересадки"
+  "TicketCard_plural": "пересадки",
+  "TicketCard_time": "ч"
 }

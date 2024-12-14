@@ -11,8 +11,8 @@ export const TicketsList = () => {
 
   const { t } = useTranslation()
 
-  const filteredTickets = tickets.filter(({ transfers }) =>
-    transfersFilters.includes(transfers as TransferFilterValues)
+  const filteredTickets = tickets.filter(({ transfersCount }) =>
+    transfersFilters.includes(transfersCount as TransferFilterValues)
   )
 
   return (

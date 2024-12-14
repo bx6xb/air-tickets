@@ -13,7 +13,7 @@ export const TicketCard = ({
   departure,
   flightTime,
   price,
-  transfers,
+  transfersCount,
 }: Props) => {
   const { t } = useTranslation()
 
@@ -30,9 +30,11 @@ export const TicketCard = ({
       <div className={s.flightInfo}>
         <FlightInfoCard {...departure} />
         <div className={s.transfers}>
-          {!!transfers && <span className={s.transfersCount}>{formatTransfrers(transfers)}</span>}
+          {!!transfersCount && (
+            <span className={s.transfersCount}>{formatTransfrers(transfersCount)}</span>
+          )}
           <div className={s.line} />
-          <span className={s.flightTime}>{flightTime}</span>
+          <span className={s.flightTime}>{flightTime + t('TicketCard_time')}</span>
         </div>
         <FlightInfoCard {...arrival} />
       </div>

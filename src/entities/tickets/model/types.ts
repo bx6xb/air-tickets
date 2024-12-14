@@ -18,10 +18,10 @@ export type TicketType = {
   airline: string
   arrival: FlightInfo
   departure: FlightInfo
-  flightTime: string
+  flightTime: number
   id: string
   price: PriceInCurrencies
-  transfers: number
+  transfersCount: number
 }
 
 export type FlightInfo = {

@@ -19,8 +19,8 @@
       "city": "Nur-Sultan",
       "airport": "NQZ"
     },
-    "transfers": 0,
-    "flightTime": "4h"
+    "transfersCount": 0,
+    "flightTime": 4
   },
   {
     "id": "2",
@@ -42,8 +42,8 @@
       "city": "Istanbul",
       "airport": "IST"
     },
-    "transfers": 1,
-    "flightTime": "6h"
+    "transfersCount": 1,
+    "flightTime": 6
   },
   {
     "id": "3",
@@ -65,8 +65,8 @@
       "city": "Dubai",
       "airport": "DXB"
     },
-    "transfers": 2,
-    "flightTime": "9h"
+    "transfersCount": 2,
+    "flightTime": 9
   },
   {
     "id": "4",
@@ -88,8 +88,8 @@
       "city": "Doha",
       "airport": "DOH"
     },
-    "transfers": 0,
-    "flightTime": "7h"
+    "transfersCount": 0,
+    "flightTime": 7
   },
   {
     "id": "5",
@@ -111,8 +111,8 @@
       "city": "Frankfurt",
       "airport": "FRA"
     },
-    "transfers": 3,
-    "flightTime": "14h"
+    "transfersCount": 3,
+    "flightTime": 14
   },
   {
     "id": "6",
@@ -134,8 +134,8 @@
       "city": "Delhi",
       "airport": "DEL"
     },
-    "transfers": 1,
-    "flightTime": "5h"
+    "transfersCount": 1,
+    "flightTime": 5
   },
   {
     "id": "7",
@@ -157,8 +157,8 @@
       "city": "Seoul",
       "airport": "ICN"
     },
-    "transfers": 2,
-    "flightTime": "10h"
+    "transfersCount": 2,
+    "flightTime": 10
   },
   {
     "id": "8",
@@ -180,8 +180,8 @@
       "city": "Tashkent",
       "airport": "TAS"
     },
-    "transfers": 0,
-    "flightTime": "3h"
+    "transfersCount": 0,
+    "flightTime": 3
   },
   {
     "id": "9",
@@ -203,8 +203,8 @@
       "city": "Singapore",
       "airport": "SIN"
     },
-    "transfers": 3,
-    "flightTime": "11h"
+    "transfersCount": 3,
+    "flightTime": 11
   },
   {
     "id": "10",
@@ -226,8 +226,8 @@
       "city": "Antalya",
       "airport": "AYT"
     },
-    "transfers": 1,
-    "flightTime": "6h"
+    "transfersCount": 1,
+    "flightTime": 6
   },
   {
     "id": "11",
@@ -249,8 +249,8 @@
       "city": "Dubai",
       "airport": "DXB"
     },
-    "transfers": 1,
-    "flightTime": "6h"
+    "transfersCount": 1,
+    "flightTime": 6
   },
   {
     "id": "12",
@@ -272,8 +272,8 @@
       "city": "Abu Dhabi",
       "airport": "AUH"
     },
-    "transfers": 2,
-    "flightTime": "7h"
+    "transfersCount": 2,
+    "flightTime": 7
   },
   {
     "id": "13",
@@ -295,8 +295,8 @@
       "city": "London",
       "airport": "LHR"
     },
-    "transfers": 2,
-    "flightTime": "8h"
+    "transfersCount": 2,
+    "flightTime": 8
   },
   {
     "id": "14",
@@ -318,8 +318,8 @@
       "city": "Moscow",
       "airport": "SVO"
     },
-    "transfers": 0,
-    "flightTime": "4h"
+    "transfersCount": 0,
+    "flightTime": 4
   },
   {
     "id": "15",
@@ -341,8 +341,8 @@
       "city": "Paris",
       "airport": "CDG"
     },
-    "transfers": 1,
-    "flightTime": "7h"
+    "transfersCount": 1,
+    "flightTime": 7
   },
   {
     "id": "16",
@@ -364,8 +364,8 @@
       "city": "Zurich",
       "airport": "ZRH"
     },
-    "transfers": 1,
-    "flightTime": "6h"
+    "transfersCount": 1,
+    "flightTime": 6
   },
   {
     "id": "17",
@@ -387,8 +387,8 @@
       "city": "Bangkok",
       "airport": "BKK"
     },
-    "transfers": 2,
-    "flightTime": "9h"
+    "transfersCount": 2,
+    "flightTime": 9
   },
   {
     "id": "18",
@@ -410,7 +410,7 @@
       "city": "Sydney",
       "airport": "SYD"
     },
-    "transfers": 3,
-    "flightTime": "13h"
+    "transfersCount": 3,
+    "flightTime": 13
   }
 ]

@@ -19,5 +19,6 @@
   "TicketCard_buy": "Buy",
   "TicketCard_for": "for",
   "TicketCard_singular": "transfer",
-  "TicketCard_plural": "transfers"
+  "TicketCard_plural": "transfers",
+  "TicketCard_time": "h"
 }
