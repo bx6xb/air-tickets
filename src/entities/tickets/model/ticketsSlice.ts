@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 import ticketsData from '../../../shared/lib/tickets.json'
-import { TicketType, TicketsState } from './types'
+import { Currencies, TicketType, TicketsState } from './types'
 
 const initialState: TicketsState = {
   currency: 'rub',
@@ -11,5 +11,11 @@ const initialState: TicketsState = {
 export const ticketsSlice = createSlice({
   initialState,
   name: 'ticketsSlice',
-  reducers: {},
+  reducers: {
+    setCurrency(state, action: PayloadAction<Currencies>) {
+      state.currency = action.payload
+    },
+  },
 })
+
+export const { setCurrency } = ticketsSlice.actions

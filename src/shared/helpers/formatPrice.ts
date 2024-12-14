@@ -1,6 +1,6 @@
-import { Currency, PriceInCurrencies } from '../../entities/tickets/model/types'
+import { Currencies, PriceInCurrencies } from '../../entities/tickets/model/types'
 
-export const formatPrice = (price: PriceInCurrencies, currency: Currency) => {
+export const formatPrice = (price: PriceInCurrencies, currency: Currencies) => {
   let currencySymbol = '₽'
 
   if (currency === 'eur') {
@@ -9,7 +9,11 @@ export const formatPrice = (price: PriceInCurrencies, currency: Currency) => {
     currencySymbol = '$'
   }
 
-  const string = price[currency].toString()
+  let priceString = price[currency].toString()
 
-  return string.slice(0, 2) + ' ' + string.slice(2) + currencySymbol
+  if (priceString.length > 3) {
+    priceString = priceString.slice(0, 2) + ' ' + priceString.slice(2)
+  }
+
+  return priceString + currencySymbol
 }

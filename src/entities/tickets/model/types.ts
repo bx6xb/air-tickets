@@ -1,9 +1,9 @@
 export type TicketsState = {
-  currency: Currency
+  currency: Currencies
   tickets: TicketType[]
 }
 
-export type Currency = 'eur' | 'rub' | 'usd'
+export type Currencies = 'eur' | 'rub' | 'usd'
 
 export type PriceInCurrencies = {
   eur: number

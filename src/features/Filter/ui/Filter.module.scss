@@ -1,0 +1,15 @@
+.filter {
+  width: 300px;
+  min-height: 100px;
+  padding: 15px;
+
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px 0 rgb(0 0 0 / 25%);
+
+  &Name {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
