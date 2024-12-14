@@ -26,6 +26,7 @@ export const TicketCard = ({
           <br /> {t('TicketCard_for')} {price}
         </button>
       </div>
+
       <div className={s.flightInfo}>
         <FlightInfoCard {...departure} />
         <div className={s.transfers}>

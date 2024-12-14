@@ -7,38 +7,47 @@
     margin-top: 10px;
   }
 
-  &Input {
-    cursor: pointer;
+  @media (width <= 576px) {
+    font-size: 14px;
+  }
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.input {
+  cursor: pointer;
 
-    width: 23px;
-    height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    appearance: none;
-    border: 1px solid var(--gray);
-    border-radius: 3px;
+  width: 23px;
+  height: 23px;
 
-    &:checked {
-      border: 1px solid var(--blue);
+  appearance: none;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
 
-      &::after {
-        content: '';
+  &:checked {
+    border: 1px solid var(--blue);
 
-        display: block;
+    &::after {
+      content: '';
 
-        width: 40%;
-        height: 40%;
+      display: block;
 
-        background-color: var(--blue);
+      width: 40%;
+      height: 40%;
 
-        mask-image: url('images/tick.svg');
-        mask-position: center;
-        mask-repeat: no-repeat;
-        mask-size: contain;
-      }
+      background-color: var(--blue);
+
+      mask-image: url('images/tick.svg');
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: contain;
     }
+  }
+
+  @media (width <= 576px) {
+    width: 20px;
+    height: 20px;
   }
 }

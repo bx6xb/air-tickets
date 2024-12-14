@@ -36,4 +36,8 @@
     background-color: var(--blue);
     border: 1px solid var(--blue);
   }
+
+  @media (width <= 576px) {
+    font-size: 14px;
+  }
 }

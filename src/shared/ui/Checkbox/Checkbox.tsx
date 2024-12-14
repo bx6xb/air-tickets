@@ -15,7 +15,7 @@ export const Checkbox = ({ checked, label, onCheckedChange }: Props) => {
 
   return (
     <label className={s.checkbox}>
-      <input checked={checked} className={s.checkboxInput} onChange={onChange} type={'checkbox'} />
+      <input checked={checked} className={s.input} onChange={onChange} type={'checkbox'} />
       {label}
     </label>
   )

@@ -23,40 +23,42 @@ export const Filter = () => {
   }
 
   return (
-    <form className={s.filter}>
-      <h3 className={s.filterName}>{t('Filter_currency')}</h3>
-      <Tabs
-        className={s.tabs}
-        onOptionClick={onOptionClick}
-        options={['rub', 'usd', 'eur']}
-        selected={currency}
-      />
-      <h3 className={s.filterName}>{t('Filter_transfers_count')}</h3>
-      <Checkbox
-        checked={transfersFilters.includes('all')}
-        label={t('Filter_all_options')}
-        onCheckedChange={() => setTransfersFiltersHandler('all')}
-      />
-      <Checkbox
-        checked={transfersFilters.includes(0)}
-        label={t('Filter_without_transfers')}
-        onCheckedChange={() => setTransfersFiltersHandler(0)}
-      />
-      <Checkbox
-        checked={transfersFilters.includes(1)}
-        label={t('Filter_one_transfer')}
-        onCheckedChange={() => setTransfersFiltersHandler(1)}
-      />
-      <Checkbox
-        checked={transfersFilters.includes(2)}
-        label={t('Filter_two_transfers')}
-        onCheckedChange={() => setTransfersFiltersHandler(2)}
-      />
-      <Checkbox
-        checked={transfersFilters.includes(3)}
-        label={t('Filter_three_transfers')}
-        onCheckedChange={() => setTransfersFiltersHandler(3)}
-      />
-    </form>
+    <div className={s.filter}>
+      <form>
+        <h3 className={s.filterName}>{t('Filter_currency')}</h3>
+        <Tabs
+          className={s.tabs}
+          onOptionClick={onOptionClick}
+          options={['rub', 'usd', 'eur']}
+          selected={currency}
+        />
+        <h3 className={s.filterName}>{t('Filter_transfers_count')}</h3>
+        <Checkbox
+          checked={transfersFilters.includes('all')}
+          label={t('Filter_all_options')}
+          onCheckedChange={() => setTransfersFiltersHandler('all')}
+        />
+        <Checkbox
+          checked={transfersFilters.includes(0)}
+          label={t('Filter_without_transfers')}
+          onCheckedChange={() => setTransfersFiltersHandler(0)}
+        />
+        <Checkbox
+          checked={transfersFilters.includes(1)}
+          label={t('Filter_one_transfer')}
+          onCheckedChange={() => setTransfersFiltersHandler(1)}
+        />
+        <Checkbox
+          checked={transfersFilters.includes(2)}
+          label={t('Filter_two_transfers')}
+          onCheckedChange={() => setTransfersFiltersHandler(2)}
+        />
+        <Checkbox
+          checked={transfersFilters.includes(3)}
+          label={t('Filter_three_transfers')}
+          onCheckedChange={() => setTransfersFiltersHandler(3)}
+        />
+      </form>
+    </div>
   )
 }
