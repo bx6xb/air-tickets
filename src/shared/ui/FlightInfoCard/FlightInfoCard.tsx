@@ -1,6 +1,6 @@
 import s from './FlightInfoCard.module.scss'
 
-import { FlightInfo } from '../../../entities/tickets/model/types'
+import { FlightInfo } from '../../../entities'
 import { formatDate } from '../../helpers'
 
 type Props = FlightInfo

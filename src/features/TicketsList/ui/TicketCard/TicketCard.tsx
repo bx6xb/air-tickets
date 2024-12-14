@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 import s from './TicketCard.module.scss'
 
-import { TicketType } from '../../../../entities/tickets/model/types'
+import { TicketType } from '../../../../entities'
 import { FlightInfoCard, formatTransfrers, getAirlineImage } from '../../../../shared'
 
 type Props = { price: string } & Omit<TicketType, 'id' | 'price'>

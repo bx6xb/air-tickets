@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 import s from './TicketsList.module.scss'
 
-import { TransferFilterValues } from '../../../entities/tickets/model/types'
+import { TransferFilterValues } from '../../../entities'
 import { formatPrice, useAppSelector } from '../../../shared'
 import { TicketCard } from './TicketCard'
 

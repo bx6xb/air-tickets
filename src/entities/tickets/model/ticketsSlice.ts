@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
-import ticketsData from '../../../shared/lib/tickets.json'
+import ticketsData from './tickets.json'
 import { Currencies, TicketType, TicketsState, TransferFilterValues } from './types'
 
 const initialState: TicketsState = {

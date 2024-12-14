@@ -1,4 +1,4 @@
-import { Currencies, PriceInCurrencies } from '../../entities/tickets/model/types'
+import { Currencies, PriceInCurrencies } from '../../entities'
 
 export const formatPrice = (price: PriceInCurrencies, currency: Currencies) => {
   let currencySymbol = '₽'

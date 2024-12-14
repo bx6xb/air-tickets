@@ -2,8 +2,12 @@ import { useTranslation } from 'react-i18next'
 
 import s from './Filter.module.scss'
 
-import { setCurrency, setTransfersFilters } from '../../../entities'
-import { Currencies, TransferFilterValues } from '../../../entities/tickets/model/types'
+import {
+  Currencies,
+  TransferFilterValues,
+  setCurrency,
+  setTransfersFilters,
+} from '../../../entities'
 import { Checkbox, Tabs, useAppDispatch, useAppSelector } from '../../../shared'
 import { checkboxData } from './variables'
 
