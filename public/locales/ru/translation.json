@@ -1,0 +1,23 @@
+{
+  "component": "Header",
+  "Header_ru": "Рус",
+  "Header_eng": "Англ",
+
+  "component": "Filter",
+  "Filter_currency": "Валюта",
+  "Filter_transfers_count": "Количество пересадок",
+  "Filter_all_options": "Все",
+  "Filter_without_transfers": "Без пересадок",
+  "Filter_one_transfer": "1 пересадка",
+  "Filter_two_transfers": "2 пересадки",
+  "Filter_three_transfers": "3 пересадки",
+
+  "component": "TicketsList",
+  "TicketsList_nothing_to_show": "Нет билетов",
+
+  "component": "TicketCard",
+  "TicketCard_buy": "Купить",
+  "TicketCard_for": "за",
+  "TicketCard_singular": "пересадка",
+  "TicketCard_plural": "пересадки"
+}

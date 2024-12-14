@@ -1,0 +1,23 @@
+{
+  "component": "Header",
+  "Header_ru": "Rus",
+  "Header_eng": "Eng",
+
+  "component": "Filter",
+  "Filter_currency": "Currency",
+  "Filter_transfers_count": "Number of transfers",
+  "Filter_all_options": "All",
+  "Filter_without_transfers": "Without transfers",
+  "Filter_one_transfer": "1 transfer",
+  "Filter_two_transfers": "2 transfers",
+  "Filter_three_transfers": "3 transfers",
+
+  "component": "TicketsList",
+  "TicketsList_nothing_to_show": "No tickets",
+
+  "component": "TicketCard",
+  "TicketCard_buy": "Buy",
+  "TicketCard_for": "for",
+  "TicketCard_singular": "transfer",
+  "TicketCard_plural": "transfers"
+}

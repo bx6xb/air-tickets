@@ -1,5 +1,9 @@
+import { i18n } from '../config'
+
 export const formatDate = (date: string) => {
-  const locale = 'ru-RU'
+  const language = i18n.language
+
+  const locale = `${language}-${language.toUpperCase()}`
 
   const parts = new Intl.DateTimeFormat(locale, {
     day: 'numeric',
