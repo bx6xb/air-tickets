@@ -38,7 +38,7 @@
   color: white;
   text-align: center;
 
-  background-color: #fa742d;
+  background-color: var(--orange);
   border-radius: 6px;
 }
 
@@ -50,6 +50,10 @@
 
   width: 70%;
   padding: 25px;
+
+  & > :last-child {
+    align-items: flex-end;
+  }
 }
 
 .transfers {
@@ -58,11 +62,32 @@
   flex-grow: 1;
   gap: 5px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  color: var(--gray);
 }
 
 .line {
+  position: relative;
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: var(--gray);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: -7px;
+    right: 0;
+    transform: rotate(45deg);
+
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: var(--gray);
+
+    mask: url('../../shared/images/plane.svg') no-repeat center;
+  }
 }
