@@ -33,7 +33,7 @@ export const useFilter = () => {
 
       dispatch(setTransfersFilters(value as TransferFilterValues[]))
     }
-  }, [])
+  }, [dispatch, searchParams])
 
   useEffect(() => {
     const transfersFiltersValue = transfersFilters.toString()
