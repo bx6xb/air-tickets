@@ -11,6 +11,10 @@
   "Filter_one_transfer": "1 пересадка",
   "Filter_two_transfers": "2 пересадки",
   "Filter_three_transfers": "3 пересадки",
+  "Filter_sort_by": "Сортировать по",
+  "Filter_sort_by_price": "Цене",
+  "Filter_sort_by_transfers_count": "Количеству пересадок",
+  "Filter_sort_by_date": "Дате",
 
   "component": "TicketsList",
   "TicketsList_nothing_to_show": "Нет билетов",

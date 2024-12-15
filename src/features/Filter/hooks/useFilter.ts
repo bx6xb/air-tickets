@@ -4,8 +4,10 @@ import { useSearchParams } from 'react-router'
 
 import {
   Currencies,
+  SortBy,
   TransferFilterValues,
   setCurrency,
+  setSortBy,
   setTransfersFilters,
 } from '../../../entities'
 import { useAppDispatch, useAppSelector } from '../../../shared'
@@ -13,6 +15,7 @@ import { useAppDispatch, useAppSelector } from '../../../shared'
 export const useFilter = () => {
   const currency = useAppSelector(state => state.ticketsSlice.currency)
   const transfersFilters = useAppSelector(state => state.ticketsSlice.transfersFilters)
+  const sortBy = useAppSelector(state => state.ticketsSlice.sortBy)
 
   const dispatch = useAppDispatch()
 
@@ -23,6 +26,7 @@ export const useFilter = () => {
   useEffect(() => {
     const currencyParam = searchParams.get('currency')
     const transfersFiltersParam = searchParams.get('transfersFilters')
+    const sortbByParam = searchParams.get('sortBy')
 
     if (currencyParam) {
       dispatch(setCurrency(currencyParam as Currencies))
@@ -33,6 +37,10 @@ export const useFilter = () => {
 
       dispatch(setTransfersFilters(value as TransferFilterValues[]))
     }
+
+    if (sortbByParam) {
+      dispatch(setSortBy(sortbByParam as SortBy))
+    }
   }, [dispatch, searchParams])
 
   useEffect(() => {
@@ -40,9 +48,10 @@ export const useFilter = () => {
 
     setSearchParams({
       currency,
+      sortBy,
       transfersFilters: transfersFiltersValue,
     })
-  }, [transfersFilters, currency, setSearchParams])
+  }, [transfersFilters, currency, sortBy, setSearchParams])
 
   const onCurrencyChange = (option: string) => {
     dispatch(setCurrency(option as Currencies))
@@ -52,5 +61,17 @@ export const useFilter = () => {
     dispatch(setTransfersFilters(value))
   }
 
-  return { currency, onCurrencyChange, setTransfersFiltersHandler, t, transfersFilters }
+  const setSortByHandler = (value: SortBy) => {
+    dispatch(setSortBy(value))
+  }
+
+  return {
+    currency,
+    onCurrencyChange,
+    setSortByHandler,
+    setTransfersFiltersHandler,
+    sortBy,
+    t,
+    transfersFilters,
+  }
 }

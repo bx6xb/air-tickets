@@ -15,17 +15,8 @@
   }
 }
 
-.filterName {
-  margin-bottom: 10px;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  @media (width <= 576px) {
-    font-size: 14px;
-  }
-}
-
-.tabs {
-  margin-bottom: 20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

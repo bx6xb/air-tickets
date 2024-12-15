@@ -1,10 +1,11 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 import ticketsData from './tickets.json'
-import { Currencies, TicketType, TicketsState, TransferFilterValues } from './types'
+import { Currencies, SortBy, TicketType, TicketsState, TransferFilterValues } from './types'
 
 const initialState: TicketsState = {
   currency: 'rub',
+  sortBy: 'price',
   tickets: ticketsData as TicketType[],
   transfersFilters: [0, 1, 2, 3, 'all'],
 }
@@ -15,6 +16,9 @@ export const ticketsSlice = createSlice({
   reducers: {
     setCurrency(state, action: PayloadAction<Currencies>) {
       state.currency = action.payload
+    },
+    setSortBy(state, action: PayloadAction<SortBy>) {
+      state.sortBy = action.payload
     },
     setTransfersFilters(
       state,
@@ -39,4 +43,4 @@ export const ticketsSlice = createSlice({
   },
 })
 
-export const { setCurrency, setTransfersFilters } = ticketsSlice.actions
+export const { setCurrency, setSortBy, setTransfersFilters } = ticketsSlice.actions

@@ -11,6 +11,10 @@
   "Filter_one_transfer": "1 transfer",
   "Filter_two_transfers": "2 transfers",
   "Filter_three_transfers": "3 transfers",
+  "Filter_sort_by": "Sort by",
+  "Filter_sort_by_price": "Price",
+  "Filter_sort_by_transfers_count": "Number of transfers",
+  "Filter_sort_by_date": "Date",
 
   "component": "TicketsList",
   "TicketsList_nothing_to_show": "No tickets",

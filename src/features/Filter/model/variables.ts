@@ -1,9 +1,7 @@
-import { TransferFilterValues } from '../../../entities'
+import { SortBy, TransferFilterValues } from '../../../entities'
+import { Variable } from './types'
 
-export const checkboxData: {
-  label: string
-  value: TransferFilterValues
-}[] = [
+export const transfresCountCheckboxData: Variable<TransferFilterValues> = [
   {
     label: 'Filter_all_options',
     value: 'all',
@@ -23,5 +21,20 @@ export const checkboxData: {
   {
     label: 'Filter_three_transfers',
     value: 3,
+  },
+]
+
+export const sortByCheckboxData: Variable<SortBy> = [
+  {
+    label: 'Filter_sort_by_price',
+    value: 'price',
+  },
+  {
+    label: 'Filter_sort_by_transfers_count',
+    value: 'transfersCount',
+  },
+  {
+    label: 'Filter_sort_by_date',
+    value: 'date',
   },
 ]

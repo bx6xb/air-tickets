@@ -7,18 +7,30 @@ import { formatPrice, useAppSelector } from '../../../shared'
 import { TicketCard } from './TicketCard'
 
 export const TicketsList = () => {
-  const { currency, tickets, transfersFilters } = useAppSelector(state => state.ticketsSlice)
+  const { currency, sortBy, tickets, transfersFilters } = useAppSelector(
+    state => state.ticketsSlice
+  )
 
   const { t } = useTranslation()
 
-  const filteredTickets = tickets.filter(({ transfersCount }) =>
-    transfersFilters.includes(transfersCount as TransferFilterValues)
-  )
+  const filteredAndSortedTickets = tickets
+    .filter(({ transfersCount }) =>
+      transfersFilters.includes(transfersCount as TransferFilterValues)
+    )
+    .sort((a, b) => {
+      if (sortBy === 'price') {
+        return a.price[currency] - b.price[currency]
+      } else if (sortBy === 'transfersCount') {
+        return a.transfersCount - b.transfersCount
+      } else {
+        return new Date(a.departure.date).getTime() - new Date(b.departure.date).getTime()
+      }
+    })
 
   return (
     <div className={s.ticketsList}>
-      {filteredTickets.length ? (
-        filteredTickets.map(({ id, price, ...rest }) => (
+      {filteredAndSortedTickets.length ? (
+        filteredAndSortedTickets.map(({ id, price, ...rest }) => (
           <TicketCard key={id} {...rest} price={formatPrice(price, currency)} />
         ))
       ) : (
